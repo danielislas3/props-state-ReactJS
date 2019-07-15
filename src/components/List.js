@@ -10,14 +10,11 @@ export default class list extends Component {
     contador=()=>{
       this.setState(prevStare=>{
         return { count: (prevStare.count+=1)}})
-
     }
     contador2=()=>{
-      if (this.prevStare>=0){
-
+      if (this.state.count>0){
         this.setState(prevStare=>{
-          return {count: (prevStare.count-=1)}
-        })
+          return {count: (prevStare.count-=1)}})
       }
 
     }
